@@ -47,8 +47,8 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 
 ## 4. 분석 결과
 
-<img src="./docs/data/img/output.png" alt="연도별 발매수" width="400" style="display:inline-block; margin-right: 10px;" />
-<img src="./docs/data/img/sales_years_total.png" alt="연도별 판매량" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/output.png" alt="연도별 발매수" width="300" style="display:inline-block; margin-right: 10px;" />
+<img src="./docs/data/img/sales_years_total.png" alt="연도별 판매량" width="400" style="display:inline-block;" />
 
 - 판매량 데이터는 누적 데이터로, 일반적으로 게임이 출시된 지 오래될수록 판매량이 높은 우하향 그래프를 보입니다. 그러나 2010년 전까지는 우상향하는 그래프를 나타내고 있습니다. 이는 게임 개발 기술의 발전과 인터넷 보급 등으로 인해 게임 시장이 활성화된 시기로 해석할 수 있습니다.
 - 연도별 발매 수와 판매량의 그래프가 유사하다는 점에서, 발매 수의 차이가 판매량에 큰 영향을 미친다는 것을 알 수 있습니다. 즉, 게임의 판매는 발매 연도를 기준으로 시간이 지남에 따라 급격히 하락하는 경향이 있습니다.
@@ -56,12 +56,13 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 
 <img src="./docs/data/img/sales_years.png" alt="연도별 판매량(~2010)" width="1000" style="display:inline-block; margin-right: 10px;" />
 
-- 전체적인 판매량이 낮아지고 있음을 확인할 수 있습니다. 2019년부터 판매량 데이터가 명확하지 않다는 점도 확인되었습니다. 전체 기울기 그래프와 2021년까지의 기울기 그래프를 비교 분석하겠습니다.
+- 전체적인 판매량이 낮아지고 있음을 확인할 수 있습니다. 또한, 2019년부터 판매량 데이터가 명확하지 않다는 점도 확인되었습니다. 따라서, 전체 기울기 그래프와 2021년까지의 기울기 그래프를 비교 분석하겠습니다.
 
 <img src="./docs/data/img/sales_years_dx.png" alt="연도별 판매량 기울기" width="500" style="display:inline-block;" />
 <img src="./docs/data/img/sales_years_dx_2021.png" alt="연도별 판매량 기울기" width="500" style="display:inline-block;" />
 
-- 전체 기간 동안 판매량의 감소율이 하락하고 있는 것을 보여주고 있지만, 2021년까지의 데이터를 보면 북미 지역을 제외하고 판매량의 추세가 상승하고 있음을 확인할 수 있습니다.
+- 전체 기간 동안 판매량이 감소하고 있는 것을 보여주고 있습니다. 한편, 2021년까지의 데이터를 보면 북미 지역만이 판매량 기울기의 추세가 상승하고 있습니다.
+
 ```
 이는 전 세계적으로 판매량이 감소하고 있음을 의미합니다. 특히 유럽/아프리카 지역에서 이 현상이 두드러집니다. 
 다만 북미 지역에서는 판매량이 낮아지는 추세지만 회복세의 기울기로, 변곡점을 향하고 있다고 해석할 수 있습니다.
@@ -73,7 +74,7 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 - GTA5, RDR2, 콜 오브 듀티 시리즈 등 비교 시, 성공한 시리즈의 다작이 더 효과적이라는 것을 확인했습니다.
 
 ![상위 크리틱 스코어](./docs/data/img/critic_genre.png)
-- 마인크래프트와 같은 샌드박스 게임들의 크리틱 스코어가 높은 것을 확인했습니다. 이는 Web3의 제작 툴 및 참여형 요소가 실제로 자신이 만들어 나간다는 성취감을 제공하기 때문이라고 예측됩니다.
+- 마인크래프트와 같은 샌드박스 게임들의 크리틱 스코어가 높은 것을 확인했습니다.
 - 판매량 순위에서 확인할 수 없었던 비주얼 노벨의 크리틱 스코어가 매우 높다는 점도 주목할 만합니다. 이는 매니악한 경우 후한 점수를 받는 경향이 있어, 적은 생산량과 스토리 중심, 아트 요소가 문학작품처럼 접근할 수 있는 이유로 추측됩니다.
 
 ![상위 총 판매량 장르](./docs/data/img/sales_genre.png)
