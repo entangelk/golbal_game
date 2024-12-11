@@ -47,7 +47,7 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 
 ## 4. 분석 결과
 
-<img src="./docs/data/img/output.png" alt="연도별 발매수" width="400" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/sales_years_total.png" alt="연도별 판매량" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/output.png" alt="연도별 발매수" width="400" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/sales_years_total.png" alt="연도별 판매량" width="400" style="display:inline-block;" />
 
 - 판매량 데이터는 누적 데이터로, 일반적으로 게임이 출시된 지 오래될수록 판매량이 높은 우하향 그래프를 보입니다. 그러나 2010년 전까지는 우상향하는 그래프를 나타내고 있습니다. 이는 게임 개발 기술의 발전과 인터넷 보급 등으로 인해 게임 시장이 활성화된 시기로 해석할 수 있습니다.
 - 연도별 발매 수와 판매량의 그래프가 유사하다는 점에서, 발매 수의 차이가 판매량에 큰 영향을 미친다는 것을 알 수 있습니다. 즉, 게임의 판매는 발매 연도를 기준으로 시간이 지남에 따라 급격히 하락하는 경향이 있습니다.
