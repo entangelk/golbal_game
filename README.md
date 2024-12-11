@@ -47,8 +47,7 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 
 ## 4. 분석 결과
 
-<img src="./docs/data/img/output.png" alt="연도별 발매수" width="400" style="display:inline-block; margin-right: 10px;" />
-<img src="./docs/data/img/sales_years_total.png" alt="연도별 판매량" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/output.png" alt="연도별 발매수" width="400" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/sales_years_total.png" alt="연도별 판매량" width="500" style="display:inline-block;" />
 
 - 판매량 데이터는 누적 데이터로, 일반적으로 게임이 출시된 지 오래될수록 판매량이 높은 우하향 그래프를 보입니다. 그러나 2010년 전까지는 우상향하는 그래프를 나타내고 있습니다. 이는 게임 개발 기술의 발전과 인터넷 보급 등으로 인해 게임 시장이 활성화된 시기로 해석할 수 있습니다.
 - 연도별 발매 수와 판매량의 그래프가 유사하다는 점에서, 발매 수의 차이가 판매량에 큰 영향을 미친다는 것을 알 수 있습니다. 즉, 게임의 판매는 발매 연도를 기준으로 시간이 지남에 따라 급격히 하락하는 경향이 있습니다.
@@ -58,8 +57,7 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 
 - 전체적인 판매량이 낮아지고 있음을 확인할 수 있습니다. 또한, 2019년부터 판매량 데이터가 명확하지 않다는 점도 확인되었습니다. 따라서, 전체 기울기 그래프와 2021년까지의 기울기 그래프를 비교 분석하겠습니다.
 
-<img src="./docs/data/img/sales_years_dx.png" alt="연도별 판매량 기울기" width="500" style="display:inline-block;" />
-<img src="./docs/data/img/sales_years_dx_2021.png" alt="연도별 판매량 기울기" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/sales_years_dx.png" alt="연도별 판매량 기울기" width="500" style="display:inline-block;" /><img src="./docs/data/img/sales_years_dx_2021.png" alt="연도별 판매량 기울기" width="500" style="display:inline-block;" />
 
 - 전체 기간 동안 판매량이 감소하고 있는 것을 보여주고 있습니다. 한편, 2021년까지의 데이터를 보면 북미 지역만이 판매량 기울기의 추세가 상승하고 있습니다.
 
@@ -83,8 +81,7 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
     - 상위 판매 장르의 게임 수가 많아 하향 평준화가 되었을 가능성이 있습니다.
     - 크리틱 점수는 낮지만 장르적 선호로 인해 판매량이 지지받는 경우도 있을 것입니다.
 
-<img src="./docs/data/img/ass.png" alt="슈팅/액션/스포츠 장르 수" width="500" style="display:inline-block; margin-right: 10px;" />
-<img src="./docs/data/img/genre_count.png" alt="장르별 게임 수" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/ass.png" alt="슈팅/액션/스포츠 장르 수" width="500" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/genre_count.png" alt="장르별 게임 수" width="500" style="display:inline-block;" />
 
 
 
@@ -103,23 +100,20 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 ```
 - 추가 분석을 위해 장르/판매 추세선을 확인하겠습니다.
 
-<img src="./docs/data/img/genre_+.png" alt="연도별 장르 추세선 양수" width="500" style="display:inline-block; margin-right: 10px;" />
-<img src="./docs/data/img/genre_-.png" alt="연도별 장르 추세선 음수" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/genre_+.png" alt="연도별 장르 추세선 양수" width="500" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/genre_-.png" alt="연도별 장르 추세선 음수" width="500" style="display:inline-block;" />
 
 ```
 액션 어드벤처뿐만 아니라 각 지역에서 선호하는 게임 장르의 추세선이 우상향하는 것을 확인했습니다. 
 다만 비주얼 노벨의 경우 하락하고 있으나 그 기울기가 크지 않아 무시할 수 있을 것으로 예상됩니다.
 ```
 
-<img src="./docs/data/img/sales_+.png" alt="연도별 판매 추세선 양수" width="500" style="display:inline-block; margin-right: 10px;" />
-<img src="./docs/data/img/sales_2021+.png" alt="연도별 판매 추세선 양수 2021" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/sales_+.png" alt="연도별 판매 추세선 양수" width="500" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/sales_2021+.png" alt="연도별 판매 추세선 양수 2021" width="500" style="display:inline-block;" />
 
 ```
 판매량 추세의 경우 2021년까지의 데이터를 확인하면 샌드박스와 보드게임이 상승 추세임을 확인했습니다. 이를 통해 유럽 시장에서 게임 파이는 작아지고 있지만 보드게임의 판매량은 높아지는 것을 보아, 주류 게임이 점점 보드게임으로 전환되고 있음을 알 수 있습니다.
 ```
 
-<img src="./docs/data/img/sales_-.png" alt="연도별 판매 추세선 음수" width="500" style="display:inline-block; margin-right: 10px;" />
-<img src="./docs/data/img/sales_2021-.png" alt="연도별 판매 추세선 음수 2021" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/sales_-.png" alt="연도별 판매 추세선 음수" width="500" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/sales_2021-.png" alt="연도별 판매 추세선 음수 2021" width="500" style="display:inline-block;" />
 
 ```
 기타 다른 유망했던 장르들의 기울기는 생각보다 크게 나타나고 있으며, 슈팅 게임의 경우 그 하락세가 매우 두드러집니다. 
