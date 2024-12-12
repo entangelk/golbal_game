@@ -14,7 +14,7 @@
 | 슈팅         | 글로벌  | A      | 판매량이 감소하고 있는 상황을 감안하여, 트리플A 대신 A급 가성비 개발을 통한 시장 진출 전략을 채택합니다. |
 | 비주얼 노벨  | 일본    | A      | 일본 내에서 효과적인 판매 가능성이 있지만, 일본 시장의 크기에서 매력적이지 않기 때문에 가성비 개발이 필요합니다. |
 | 보드게임     | 글로벌  | B      | 하락 추세의 게임으로, 한정적으로 유럽/아프리카 시장에 진입할 가능성이 있습니다.    |
-| 스포츠       | 글로벌  | AA    | 독과점 효과를 누릴 수 있는 스포츠 프랜차이즈가 필요하지만, 실제 스포츠 게임 개발은 어려움이 예상됩니다. 판타지적, 전략적 요소를 가진 게임 개발이 유효할 것입니다. |
+| 스포츠       | 글로벌  | AA    | 독점 효과를 누릴 수 있는 스포츠 프랜차이즈가 필요하지만, 실제 스포츠 게임 개발은 어려움이 예상됩니다. 판타지적, 전략적 요소를 가진 게임 개발이 유효할 것입니다. |
 | 교육/샌드박스| 글로벌  | AA     | 샌드박스 특성상 고퀄리티 게임 제작은 어렵지만, 트렌드의 영향으로 어느 정도 결과물을 기대할 수 있습니다. |
 
 
@@ -57,7 +57,7 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 
 - 전체적인 판매량이 낮아지고 있음을 확인할 수 있습니다. 또한, 2019년부터 판매량 데이터가 명확하지 않다는 점도 확인되었습니다. 따라서, 전체 기울기 그래프와 2021년까지의 기울기 그래프를 비교 분석하겠습니다.
 
-<img src="./docs/data/img/sales_years_dx.png" alt="연도별 판매량 기울기" width="500" style="display:inline-block;" /><img src="./docs/data/img/sales_years_dx_2021.png" alt="연도별 판매량 기울기" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/sales_years_dx.png" alt="연도별 판매량 기울기" width="400" style="display:inline-block;" /><img src="./docs/data/img/sales_years_dx_2021.png" alt="연도별 판매량 기울기" width="400" style="display:inline-block;" />
 
 - 전체 기간 동안 판매량이 감소하고 있는 것을 보여주고 있습니다. 한편, 2021년까지의 데이터를 보면 북미 지역만이 판매량 기울기의 추세가 상승하고 있습니다.
 
@@ -81,12 +81,14 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
     - 상위 판매 장르의 게임 수가 많아 하향 평준화가 되었을 가능성이 있습니다.
     - 크리틱 점수는 낮지만 장르적 선호로 인해 판매량이 지지받는 경우도 있을 것입니다.
 
-<img src="./docs/data/img/ass.png" alt="슈팅/액션/스포츠 장르 수" width="500" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/genre_count.png" alt="장르별 게임 수" width="500" style="display:inline-block;" />
-
+<img src="./docs/data/img/ass.png" alt="슈팅/액션/스포츠 장르 수" width="1000" style="display:inline-block; margin-right: 10px;" />
+<img src="./docs/data/img/genre_count.png" alt="장르별 게임 수" width="400" style="display:inline-block;" /><img src="./docs/data/img/sales_per_genres.png" alt="장르별 게임 수" width="400" style="display:inline-block;" />
 
 
 ```
-총 판매량이 많은 액션 게임의 경우 하향 평준화가 되었을 가능성이 있습니다. 슈팅/스포츠 장르의 경우 장르 발매 수가 적은 것으로 유추할 수 있으며, 장르적 특수성에 의해 판매량이 지지받을 가능성이 있습니다.
+총 판매량이 많은 액션 게임의 경우 하향 평준화가 되었을 가능성이 있습니다. 
+슈팅/스포츠 장르의 경우 액션 게임에 비해 절반 수준의 발매수 이므로, 장르적 특수성에 의해 판매량이 지지받을 가능성이 있습니다.
+발매수 대비 판매량이 높은 장르로는 스포츠,슈팅,액션,레이싱,샌드박스 순이었습니다.
 ```
 
 <!-- ![연도별 장르 카운트](./docs/data/img/years_genres.png) -->
@@ -100,20 +102,20 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 ```
 - 추가 분석을 위해 장르/판매 추세선을 확인하겠습니다.
 
-<img src="./docs/data/img/genre_+.png" alt="연도별 장르 추세선 양수" width="500" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/genre_-.png" alt="연도별 장르 추세선 음수" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/genre_+.png" alt="연도별 장르 추세선 양수" width="400" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/genre_-.png" alt="연도별 장르 추세선 음수" width="400" style="display:inline-block;" />
 
 ```
 액션 어드벤처뿐만 아니라 각 지역에서 선호하는 게임 장르의 추세선이 우상향하는 것을 확인했습니다. 
 다만 비주얼 노벨의 경우 하락하고 있으나 그 기울기가 크지 않아 무시할 수 있을 것으로 예상됩니다.
 ```
 
-<img src="./docs/data/img/sales_+.png" alt="연도별 판매 추세선 양수" width="500" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/sales_2021+.png" alt="연도별 판매 추세선 양수 2021" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/sales_+.png" alt="연도별 판매 추세선 양수" width="400" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/sales_2021+.png" alt="연도별 판매 추세선 양수 2021" width="400" style="display:inline-block;" />
 
 ```
 판매량 추세의 경우 2021년까지의 데이터를 확인하면 샌드박스와 보드게임이 상승 추세임을 확인했습니다. 이를 통해 유럽 시장에서 게임 파이는 작아지고 있지만 보드게임의 판매량은 높아지는 것을 보아, 주류 게임이 점점 보드게임으로 전환되고 있음을 알 수 있습니다.
 ```
 
-<img src="./docs/data/img/sales_-.png" alt="연도별 판매 추세선 음수" width="500" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/sales_2021-.png" alt="연도별 판매 추세선 음수 2021" width="500" style="display:inline-block;" />
+<img src="./docs/data/img/sales_-.png" alt="연도별 판매 추세선 음수" width="400" style="display:inline-block; margin-right: 10px;" /><img src="./docs/data/img/sales_2021-.png" alt="연도별 판매 추세선 음수 2021" width="400" style="display:inline-block;" />
 
 ```
 기타 다른 유망했던 장르들의 기울기는 생각보다 크게 나타나고 있으며, 슈팅 게임의 경우 그 하락세가 매우 두드러집니다. 
@@ -177,5 +179,5 @@ Data_set : https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 | 슈팅         | 글로벌  | A      | 판매량이 감소하고 있는 상황을 감안하여, 트리플A 대신 A급 가성비 개발을 통한 시장 진출 전략을 채택합니다. |
 | 비주얼 노벨  | 일본    | A      | 일본 내에서 효과적인 판매 가능성이 있지만, 일본 시장의 크기에서 매력적이지 않기 때문에 가성비 개발이 필요합니다. |
 | 보드게임     | 글로벌  | B      | 하락 추세의 게임으로, 한정적으로 유럽/아프리카 시장에 진입할 가능성이 있습니다.    |
-| 스포츠       | 글로벌  | AA    | 독과점 효과를 누릴 수 있는 스포츠 프랜차이즈가 필요하지만, 실제 스포츠 게임 개발은 어려움이 예상됩니다. 판타지적, 전략적 요소를 가진 게임 개발이 유효할 것입니다. |
+| 스포츠       | 글로벌  | AA    | 독점 효과를 누릴 수 있는 스포츠 프랜차이즈가 필요하지만, 실제 스포츠 게임 개발은 어려움이 예상됩니다. 판타지적, 전략적 요소를 가진 게임 개발이 유효할 것입니다. |
 | 교육/샌드박스| 글로벌  | AA     | 샌드박스 특성상 고퀄리티 게임 제작은 어렵지만, 트렌드의 영향으로 어느 정도 결과물을 기대할 수 있습니다. |
